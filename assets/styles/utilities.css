@@ -1,0 +1,73 @@
+/* #region Grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.gap {
+  gap: 1rem;
+}
+/* #endregion */
+
+/* #region Text */
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+/* #endregion */
+
+/* #region Display */
+.block {
+  display: block;
+}
+/* #endregion */
+
+/* #region Border */
+.rounded {
+  border-radius: 100%;
+}
+/* #endregion */
+
+/* #region Padding */
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+/* #endregion */

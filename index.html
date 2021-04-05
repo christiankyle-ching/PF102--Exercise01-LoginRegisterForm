@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu|Heebo"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities.css" />
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="navbar-brand">
+        <h1>Facebook</h1>
+      </a>
+
+      <!-- Login Form -->
+      <form id="loginForm">
+        <span class="input-group">
+          <label for="lfEmail">Email or phone</label>
+          <input id="lfEmail" type="email" />
+        </span>
+
+        <span class="input-group">
+          <label for="lfPass">Password</label>
+          <input id="lfPass" type="password" />
+          <a href="#">
+            <small>Forgotten account?</small>
+          </a>
+        </span>
+
+        <button type="submit">Log In</button>
+      </form>
+    </nav>
+
+    <main>
+      <!-- Left Column -->
+      <section>
+        <h4>
+          Facebook helps you connect and share with the people in your life.
+        </h4>
+      </section>
+
+      <!-- Right Column -->
+      <section>
+        <!-- Register Form -->
+        <form id="registerForm" class="grid grid-cols-2 gap">
+          <header class="col-span-2">
+            <h1>Create an account</h1>
+            <span class="block mt-1">It's quick and easy.</span>
+          </header>
+
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Surname" />
+          <input
+            type="text"
+            placeholder="Mobile number or email address"
+            class="col-span-2"
+          />
+          <input type="text" placeholder="New Password" class="col-span-2" />
+
+          <div class="col-span-2">
+            <label class="text-md font-bold block">Birthday</label>
+
+            <input
+              id="rfDay"
+              type="number"
+              value="20"
+              min="1"
+              max="31"
+              placeholder="dd"
+            />
+            <input id="rfMonth" type="text" value="Feb" placeholder="mmm" />
+            <input id="rfYear" type="number" value="2020" placeholder="yyyy" />
+
+            <span class="button-help" title="Sample help message...">?</span>
+          </div>
+
+          <div class="col-span-2 input-gender">
+            <label class="text-md font-bold block">Gender</label>
+
+            <input id="rfBirthdayFemale" type="radio" name="rfGender" />
+            <label for="rfBirthdayFemale" class="text-lg">Female</label>
+
+            <input id="rfBirthdayMale" type="radio" name="rfGender" />
+            <label for="rfBirthdayMale" class="text-lg">Male</label>
+
+            <input id="rfBirthdayCustom" type="radio" name="rfGender" />
+            <label for="rfBirthdayCustom" class="text-lg">Custom</label>
+
+            <span class="button-help" title="Sample help message...">?</span>
+          </div>
+
+          <small class="col-span-2"
+            >By clicking Sign Up, you agree to our
+            <a href="#">Terms, Data Policy</a> and
+            <a href="#">Cookie Policy</a>. You may receive SMS notifications
+            from us and can opt out at any time.
+          </small>
+
+          <div class="col-span-2">
+            <button type="submit">Sign Up</button>
+          </div>
+
+          <p class="col-span-2 mt-3">
+            <a href="#">Create a Page</a> for a celebrity, band or business.
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

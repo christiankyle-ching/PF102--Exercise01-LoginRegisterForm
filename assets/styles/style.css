@@ -1,0 +1,215 @@
+/* Global Variables and Styles */
+:root {
+  /* Primary Theme */
+  --primary: #1f5b4c;
+  --darkPrimary: #03261d;
+  --secondary: #2a7a66;
+  --white: #f8f8ff;
+  --black: #100c08;
+
+  /* Extra Colors */
+  --success: #61a24f;
+  --lightSuccess: #7fc968;
+  --lightSecondary: #ecfffb;
+
+  font-family: "Heebo";
+  font-size: 16px;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--lightSecondary);
+}
+
+/* #region Zero out defaults */
+* {
+  padding: 0;
+  margin: 0;
+
+  /* Disable Chrome Focus Outline */
+  outline: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+/* #endregion */
+
+/* #region Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu";
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+small,
+label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+small > a,
+p > a {
+  font-weight: bolder;
+  color: var(--primary);
+}
+/* #endregion */
+
+/* #region Navbar */
+nav {
+  color: var(--white);
+  background: linear-gradient(var(--secondary), var(--primary));
+  border-bottom: 2px solid var(--darkPrimary);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 2rem 3.5rem 1rem 3.5rem;
+}
+/* #endregion */
+
+/* #region Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem 3.5rem;
+}
+
+main > section:nth-child(1) {
+  grid-column: span 1 / span 1;
+  color: var(--darkPrimary);
+}
+
+main > section:nth-child(2) {
+  grid-column: span 1 / span 1;
+}
+
+/* #endregion */
+
+/* #region Buttons */
+button:hover {
+  filter: brightness(0.9);
+}
+
+.button-help {
+  display: inline-block;
+
+  height: 1.2rem;
+  width: 1.2rem;
+
+  border-radius: 100%;
+  background: var(--black);
+  opacity: 0.7;
+
+  text-align: center;
+  font-size: smaller;
+  color: var(--white);
+
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region Inputs & Labels */
+input {
+  padding: 0.2rem;
+}
+
+.input-group > * {
+  display: block;
+}
+
+label.text-lg {
+  opacity: 0.8;
+}
+/* #endregion */
+
+/* #region Login Form */
+#loginForm {
+  display: flex;
+}
+
+#loginForm > * {
+  margin: 0 0.5rem;
+}
+
+#loginForm button[type="submit"] {
+  padding: 0.3rem;
+  border: 1px solid var(--darkPrimary);
+  color: var(--white);
+  background-color: var(--secondary);
+
+  margin: auto;
+  margin-top: 1rem;
+}
+/* #endregion */
+
+/* #region Register Form */
+#registerForm input {
+  font-size: 16px;
+  padding: 0.4rem;
+
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+}
+
+#registerForm button[type="submit"] {
+  color: var(--white);
+  font-size: larger;
+
+  padding: 0.3rem;
+  width: 10rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--lightSuccess);
+  border-top-width: 3px;
+  background: var(--success);
+}
+
+#rfDay {
+  padding: 0.2rem !important;
+  width: 3rem;
+}
+
+#rfMonth {
+  padding: 0.2rem !important;
+  width: 4rem;
+}
+
+#rfYear {
+  padding: 0.2rem !important;
+  width: 4rem;
+}
+
+#registerForm label:not(:first-child) {
+  margin-right: 0.5rem;
+}
+/* #endregion */ ;
